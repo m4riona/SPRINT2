@@ -1,0 +1,30 @@
+// CUSTOM VARIABLES
+
+// Modifico colors primary i secondary
+$primary: #5265e1;
+$secondary: #fa5959;
+
+//////// fi variables
+
+// BODY
+body {
+  padding-top: 150px; /*tinc el navbar fixed i li poso padding al body pq no es superposi*/
+  .btn {
+    font-size: 0.8rem;
+  }
+}
+
+// FONS DE LA IL·LUSTRACIÓ SIMPLE BOOKMARK
+.fons-right {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  margin-left: 150px;
+  margin-top: -250px;
+  border-top-left-radius: 200px 200px;
+  border-bottom-left-radius: 200px 200px;
+  z-index: -1;
+}
+
+// importem  bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
