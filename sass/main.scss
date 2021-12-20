@@ -4,6 +4,18 @@
 $primary: #5265e1;
 $secondary: #fa5959;
 
+// Afageixo un nou espai per posicionar les cards
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+) !default;
+
 //////// fi variables
 
 // BODY
@@ -61,6 +73,14 @@ body {
 }
 .nav-tabs {
   border-bottom: 0px !important;
+}
+
+// CARDS
+.container_img {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 ///////////////
