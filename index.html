@@ -9,7 +9,6 @@
 </head>
 <body>
     <div class="container">
-
         <!-- NAVEGACIÓ PRINCIPAL -->
         <nav class="navbar navbar-expand-md navbar-light mb-5 p-5 bg-white fixed-top">
             <div class="container-fluid">
@@ -20,7 +19,7 @@
                     <img src="img/icon-hamburger.svg" alt:"">
                 </button>
                 <div id="Menu" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav me-0">
                         <li class="nav-item"><a class="nav-link px-4 text-uppercase" href="#">Features</a></li>
                         <li class="nav-item"><a class="nav-link px-4 text-uppercase" href="#">Pricing</a></li>
                         <li class="nav-item"><a class="nav-link px-4 text-uppercase" href="#">Contact</a></li>
@@ -227,9 +226,62 @@
                 </div> 
             </div> <!--fi faqqs-->
         </main>
-    </div> <!--fi container-->
+    </div>
+        <!--FOOTER---FORMULARI I NAV-->
+       
+        <footer>
+            <div class="row justify-content-center mt-5 bg-primary">
+                <div class="col-12 col-lg-6 mt-5">
+                    <p class="small text-center text-white text-uppercase">35.000+ already joined</p>
+                    <h2 class="text-center mb-4 text-white">Stay up-to-date with what we're doing</h2>
+                    <form class="pb-5 needs-validation" novalidate>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7 col-12 px-5 position-relative">  
+                                <label for="inputEmail" class="form-label visually-hidden"></label>
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailContact required">
+                                <div class="valid-tooltip">ok</div>
+                                <div class="invalid-tooltip bg-secondary">
+                                    Whooops, make sure it's an email
+                                </div>
+                                <div id="emailContact" class="form-text"></div>
+                            </div>
+                            <div class="col-lg-3 col-12 text-center mt-5 mt-lg-0">
+                                <button type="submit" class="btn btn-secondary px-4 py-2 text-white">Contact Us</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <a class="navbar-brand ms-5" href="#">
+                    <img src="img/logo-bookmark.svg" alt="Logo" id="brand-footer">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#secondNav">
+                    <img src="img/icon-hamburger.svg" alt:"">
+                </button>
+                <div id="secondNav" class="collapse navbar-collapse text-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link px-4 text-uppercase text-white" href="#">Features</a></li>
+                        <li class="nav-item"><a class="nav-link px-4 text-uppercase text-white" href="#">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link px-4 text-uppercase text-white" href="#">Contact</a></li>
+                    </ul>
+                    <div class="ms-lg-auto text-center mt-5 mt-lg-0 mb-5 my-lg-auto me-5 p-3">
+                        <a href="#" class="me-5">
+                            <img src="img/icon-facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="me-0">
+                            <img src="img/icon-twitter.svg" alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </footer> <!--fi footer-->
+   
+    <!--</div> fi container-->
 </body>
 <!-- IMPORTEM JS -->
+<script src="js/validacio-formulari.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </html>

@@ -16,7 +16,14 @@ $spacers: (
   6: $spacer * 6,
 ) !default;
 
+// Canvi icona error formulari
+$form-feedback-icon-invalid: url("/img/icon-error.svg");
+
 //////// fi variables
+* {
+  margin: 0 auto;
+  //max-width: 1200px;
+}
 
 // BODY
 body {
@@ -101,6 +108,15 @@ body {
 #flush-headingThree .accordion-button::after,
 #flush-headingFour .accordion-button::after {
   background-image: url("/img/icon-arrow.svg");
+}
+
+//FOOTER
+footer {
+  padding: 0;
+  margin: 0;
+}
+#brand-footer {
+  filter: invert(100%);
 }
 
 ///////////////
