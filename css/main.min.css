@@ -11,6 +11,25 @@ body .btn {
   font-size: 0.8rem;
 }
 
+.navbar-light .navbar-nav a.nav-link:hover {
+  color: #fa5959;
+}
+
+.navbar-light .navbar-nav a.btn:hover {
+  background: white;
+  color: #fa5959 !important;
+}
+
+a.btn-primary:hover {
+  background: white;
+  color: #5265e1;
+}
+
+a.btn-light:hover {
+  background: white;
+  border: 1px solid black;
+}
+
 .fons-ilust {
   width: 100%;
   height: 250px;
@@ -45,6 +64,10 @@ body .btn {
 
 #myTab li a:active {
   border: none;
+}
+
+#myTab li a:hover {
+  color: #fa5959;
 }
 
 #myTab .nav-tabs,
@@ -93,14 +116,22 @@ body .btn {
   background-image: url("/img/icon-arrow.svg");
 }
 
-footer {
-  padding: 0;
-  margin: 0;
+.accordion-header .accordion-button:hover {
+  color: #fa5959;
 }
 
 #brand-footer {
   -webkit-filter: invert(100%);
           filter: invert(100%);
+}
+
+form .btn-secondary:hover {
+  background: white;
+  color: #fa5959 !important;
+}
+
+#secondNav a.nav-link:hover {
+  color: secondary;
 }
 
 /*!
