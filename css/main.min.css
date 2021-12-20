@@ -7,15 +7,59 @@ body .btn {
   font-size: 0.8rem;
 }
 
-.fons-right {
-  position: absolute;
+.fons-ilust {
   width: 100%;
   height: 250px;
-  margin-left: 150px;
   margin-top: -250px;
+  z-index: -1;
+}
+
+.fons-ilust-right {
+  margin-left: 150px;
   border-top-left-radius: 200px 200px;
   border-bottom-left-radius: 200px 200px;
-  z-index: -1;
+}
+
+.fons-ilust-left {
+  margin-left: -150px;
+  border-top-right-radius: 200px 200px;
+  border-bottom-right-radius: 200px 200px;
+}
+
+#myTab li a {
+  padding: 2rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+#myTab li a:link {
+  color: grey;
+}
+
+#myTab li a:visited {
+  color: grey;
+}
+
+#myTab li a:active {
+  border: none;
+}
+
+#myTab .nav-tabs,
+#myTab .nav-link {
+  border: none;
+}
+
+#myTab a.nav-link {
+  border-bottom: 1px solid #dee2e6;
+}
+
+#myTab li a.active {
+  border: none;
+  border-bottom: 3px solid #fa5959;
+  color: black;
+}
+
+.nav-tabs {
+  border-bottom: 0px !important;
 }
 
 /*!

@@ -14,17 +14,55 @@ body {
   }
 }
 
-// FONS DE LA IL·LUSTRACIÓ SIMPLE BOOKMARK
-.fons-right {
-  position: absolute;
+// FONS DE LES IL·LUSTRACIONS
+.fons-ilust {
   width: 100%;
   height: 250px;
-  margin-left: 150px;
   margin-top: -250px;
-  border-top-left-radius: 200px 200px;
-  border-bottom-left-radius: 200px 200px;
   z-index: -1;
 }
+.fons-ilust-right {
+  margin-left: 150px;
+  border-top-left-radius: 200px 200px;
+  border-bottom-left-radius: 200px 200px;
+}
+.fons-ilust-left {
+  margin-left: -150px;
+  border-top-right-radius: 200px 200px;
+  border-bottom-right-radius: 200px 200px;
+}
+// CUSTOM NAV-TABS
+#myTab {
+  li a {
+    padding: 2rem;
+    border-bottom: 1px solid #dee2e6;
+    &:link {
+      color: grey;
+    }
+    &:visited {
+      color: grey;
+    }
+    &:active {
+      border: none;
+    }
+  }
+  .nav-tabs,
+  .nav-link {
+    border: none;
+  }
+  a.nav-link {
+    border-bottom: 1px solid #dee2e6;
+  }
+}
+#myTab li a.active {
+  border: none;
+  border-bottom: 3px solid $secondary;
+  color: black;
+}
+.nav-tabs {
+  border-bottom: 0px !important;
+}
 
+///////////////
 // importem  bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";

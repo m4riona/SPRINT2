@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container">
+
         <!-- NAVEGACIÓ PRINCIPAL -->
         <nav class="navbar navbar-expand-md navbar-light mb-5 p-5 bg-white fixed-top">
             <div class="container-fluid">
@@ -28,7 +29,8 @@
                 </div>
             </div>
         </nav> <!--fi nav-->
-        <main class="container md-m-5">
+
+        <main class="container m-md-5">
             <!-- BOOKMARK MANAGER -->
             <div class="row mb-5">
                 <!--columna esquerra-->
@@ -42,14 +44,82 @@
                 </div>
                 <!--columna dreta-->
                 <div class="col-12 order-1 order-lg-2 col-lg-7 mb-5">
-                    <div class="">
-                         <div class="">
-                            <img src="img/illustration-hero.svg" class="img-fluid" alt="">
-                         </div>
-                         <div class="bg-primary fons-right"></div>
-                     </div>
+                    <div>
+                        <img src="img/illustration-hero.svg" class="img-fluid" alt="">
+                    </div>
+                    <div class="bg-primary fons-ilust fons-ilust-right"></div>
                 </div>
              </div> <!--fi bookmark manager-->
+             
+             <!-- FEATURES -->
+             <div class="row justify-content-center">
+                <div class="col-12 mt-5 col-lg-6">
+                    <h2 class="text-center">Features</h2>
+                    <p class="text-center lh-lg text-muted p-2">
+                    Our aim us to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
+                    </p>
+                </div>
+                <ul class="nav nav-tabs justify-content-center flex-column flex-md-row" role="tablist" id="myTab">
+                    <li class="nav-item text-center" role="presentation">
+                        <a class="nav-link active" id="simple-tab" data-bs-toggle="tab" href="#simple" role="tab" aria-controls="simple" aria-selected="true">Simple Bookmarking</a>
+                    </li>
+                    <li class="nav-item text-center" role="presentation">
+                        <a class="nav-link" id="speedy-tab" data-bs-toggle="tab" href="#speedy" role="tab" aria-controls="speedy" aria-selected="false">Intelligent search</a>
+                    </li>
+                    <li class="nav-item text-center" role="presentation">
+                        <a class="nav-link" id="easy-tab" data-bs-toggle="tab" href="#easy" role="tab" aria-controls="easy" aria-selected="false">Share your bookmarks</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Tab content-->
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="simple" role="tabpanel" aria-labelledby="simple-tab">
+                    <div class="row mt-5">
+                        <div class="col-12 col-lg-7">
+                              <div class="p-5">
+                                  <img src="img/illustration-features-tab-1.svg" class="img-fluid img-size" alt="">
+                              </div>
+                              <div class="fons-ilust fons-ilust-left bg-primary"></div>
+                        </div>
+                        <div class="col-12 col-lg-5 mt-5 text-center text-lg-start">
+                          <h2 class="text-lg-start">Bookmark in one click </h2>
+                          <p class="text-lg-start text-muted lh-lg my-4">Organize your bookmarks however you like.Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>  
+                          <a class="btn btn-primary py-2 px-4 my-3 shadow" href="#" role="button">More info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="speedy" role="tabpanel" aria-labelledby="speedy-tab">
+                  <div class="row mt-5">
+                      <div class="col-12 col-lg-7">
+                            <div class="p-5">
+                                <img src="img/illustration-features-tab-2.svg" class="img-fluid img-size" alt="">
+                                </div>
+                            <div class="fons-ilust fons-ilust-left bg-primary"></div>
+                      </div>
+                      <div class="col-12 col-lg-5 mt-5 text-center text-lg-start">
+                        <h2 class="text-lg-start">Intelligent search</h2>
+                        <p class="text-lg-start text-muted lh-lg my-4">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                        <a class="btn btn-primary py-2 px-4 shadow my-3" href="#" role="button">More info</a> 
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="easy" role="tabpanel" aria-labelledby="easy-tab">
+                  <div class="row mt-5">
+                      <div class="col-12 col-lg-7">
+                            <div class="p-5">
+                                <img src="img/illustration-features-tab-3.svg" class="img-fluid img-size" alt="">
+                              </div>
+                            <div class="fons-ilust fons-ilust-left bg-primary"></div>
+                      </div>
+                      <div class="col-12 col-lg-5 mt-5 text-center text-lg-start">
+                        <h2 class="text-lg-start">Share your bookmarks</h2>
+                        <p class="text-lg-start text-muted lh-lg my-4">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>  
+                        <a class="btn btn-primary shadow my-3 py-2 px-4 fs-6" href="#" role="button">More info</a>
+                      </div>
+                  </div>
+              </div>
+            </div> <!--fi tab-content-->
+
         </main>
     </div> <!--fi container-->
 </body>
