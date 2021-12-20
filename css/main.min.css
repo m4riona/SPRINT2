@@ -69,6 +69,26 @@ body .btn {
   margin-bottom: 2rem;
 }
 
+.accordion-flush,
+.accordion-item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.accordion-flush .accordion-item .accordion-button:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white;
+}
+
+#flush-headingOne .accordion-button::after,
+#flush-headingTwo .accordion-button::after,
+#flush-headingThree .accordion-button::after,
+#flush-headingFour .accordion-button::after {
+  background-image: url("/img/icon-arrow.svg");
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

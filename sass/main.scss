@@ -83,6 +83,26 @@ body {
   margin-bottom: 2rem;
 }
 
+// ACORDION
+.accordion-flush,
+.accordion-item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+.accordion-flush .accordion-item .accordion-button:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.accordion-button {
+  &:not(.collapsed) {
+    background-color: white;
+  }
+}
+#flush-headingOne .accordion-button::after,
+#flush-headingTwo .accordion-button::after,
+#flush-headingThree .accordion-button::after,
+#flush-headingFour .accordion-button::after {
+  background-image: url("/img/icon-arrow.svg");
+}
+
 ///////////////
 // importem  bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
